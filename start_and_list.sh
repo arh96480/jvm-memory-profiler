@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Start the application in the background
-java -jar /path/to/your/JMXMemoryProfiler.jar &
+java -cp target/jvm-heap-profiler-1.0-SNAPSHOT.jar JMXMemoryProfiler service:jmx:rmi:///jndi/rmi://localhost:xxxxx/jmxrmi
 
 # Capture the PID
 APP_PID=$!
