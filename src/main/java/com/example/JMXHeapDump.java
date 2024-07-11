@@ -10,8 +10,6 @@ public class JMXHeapDump {
     private static final String HEAP_DUMP_DIR = "~/Downloads/heap_dump";
 
     public static void main(String[] args) {
-        // Your existing code to connect to JMX and get HotSpotDiagnosticMXBean
-        // For demonstration purposes, we'll obtain the HotSpotDiagnosticMXBean directly
         HotSpotDiagnosticMXBean hotspotMxBean = ManagementFactory.getPlatformMXBean(HotSpotDiagnosticMXBean.class);
 
         String filePath = HEAP_DUMP_DIR + "/heap_dump_" + System.currentTimeMillis() + ".hprof";
