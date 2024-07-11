@@ -73,6 +73,10 @@ The program performs the following steps:
 ## Usage
 To run this program, execute the `main` method in the `JMXHeapDump` class. The heap dump will be saved in the `~/Downloads/heap_dump` directory with a filename pattern of `heap_dump_<timestamp>.hprof`.
 
+```sh
+sudo java -cp target/jvm-heap-profiler-1.0-SNAPSHOT.jar com.example.JMXHeapDump service:jmx:rmi:///jndi/rmi://localhost:xxxxx/jmxrmi
+```
+
 ## Notes
 - Ensure you have the necessary permissions to write to the specified directory.
 - Make sure the `com.sun.management.HotSpotDiagnosticMXBean` is available in your JVM implementation.
